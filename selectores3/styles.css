@@ -1,10 +1,13 @@
-table, tr, td {
+table,
+tr,
+td {
     border: double 2px gray;
     font-size: 35px;
     border-style: outset;
     border-spacing: 4px;
 }
 
+/* Columnas */
 td:nth-child(2) {
     background-color: red;
 }
@@ -17,6 +20,7 @@ td:nth-child(4) {
     background-color: blue;
 }
 
+/* Filas */
 tr:nth-child(1) {
     color: teal;
 }
@@ -48,3 +52,18 @@ tr:nth-child(7) {
 tr:nth-child(8) {
     color: green;
 }
+
+/* Otra solución para las columnas*/
+/* td+td cuando haya dos columnas consecutivas */
+/* td+td+td cuando haya tres columnas consecutivas */
+/*
+td+td {
+    color: red;
+}
+td+td+td {
+    color: green;
+}
+td+td+td+td {
+    color: blue;
+}
+*/
