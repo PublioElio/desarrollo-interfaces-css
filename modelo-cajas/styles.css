@@ -1,31 +1,123 @@
-* {
+/* elementos con borde */
+header,
+nav,
+aside,
+section,
+#contenedor_central2,
+footer {
     border: 1px solid black;
+    overflow: auto;
 }
 
-header {
+/* elementos centrados horizontalmente que ocupan el 80% de la página */
+header,
+nav,
+footer,
+#contenedor_central {
     text-align: center;
     margin: 0 auto;
     width: 80%;
-    height: 100px;
-    background-color: aquamarine;
+}
+
+/* elementos del encabezado */
+header {
+    height: 80px;
 }
 
 h1 {
     float: left;
+    margin-left: 2%;
 }
 
 #buscador {
     float: right;
-    width: 40%;
+    width: 180px;
+    margin-top: 20px;
+    margin-right: 15px;
 }
 
-#buscador p {
+label {
     float: left;
-    margin: 0%;
 }
 
 #cuadro_busqueda {
-    width: 150px;
-    height: 20px;
     float: right;
+    width: 120px;
+    height: 20px;
+}
+
+/* barra de navegación */
+nav,
+footer {
+    height: 30px;
+}
+
+nav a {
+    float: left;
+    margin: 5px;
+}
+
+/* elementos centrales */
+#contenedor_central {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+aside {
+    width: 20%;
+    height: 800px;
+    padding: 10px;
+}
+
+#izquierda {
+    float: left;
+    text-align: left;
+    margin-right: 15px;
+}
+
+#contenedor_central2 {
+    overflow: auto;
+}
+
+#derecha {
+    float: right;
+    margin-left: 5px;
+    height: 600px;
+}
+
+section {
+    float: left;
+    width: 75%;
+    height: 700px;
+}
+
+h3 {
+    color: blue;
+    text-decoration: underline;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+/* elementos del footer */
+footer {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+ul {
+    float: left;
+    padding: 0px;
+    margin: 5px;
+}
+
+ul li {
+    display: inline;
+}
+
+#copyright {
+    float: right;
+    margin: 5px;
 }
