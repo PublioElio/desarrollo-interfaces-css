@@ -1,0 +1,31 @@
+* {
+    border: 1px solid black;
+}
+
+header {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+h1 {
+    float: left;
+}
+
+#buscador {
+    float: right;
+    width: 40%;
+}
+
+#buscador p {
+    float: left;
+    margin: 0%;
+}
+
+#cuadro_busqueda {
+    width: 150px;
+    height: 20px;
+    float: right;
+}
