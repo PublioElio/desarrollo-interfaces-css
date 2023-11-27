@@ -19,7 +19,7 @@ footer,
     width: 80%;
 }
 
-/* elementos del encabezado */
+/* ----------- elementos del encabezado ----------- */
 header {
     height: 80px;
 }
@@ -57,37 +57,20 @@ nav a {
     margin: 5px;
 }
 
-/* elementos centrales */
+/* ----------- elementos centrales ----------- */
 #contenedor_central {
     margin-top: 10px;
     margin-bottom: 10px;
     overflow: auto;
 }
 
-aside {
-    width: 20%;
-    height: 800px;
-    padding: 10px;
-}
-
-#izquierda {
-    float: left;
-    text-align: left;
-    margin-right: 15px;
-}
-
 #contenedor_central2 {
     overflow: auto;
 }
 
-#derecha {
-    float: right;
-    margin-left: 5px;
-    height: 600px;
-}
-
 section {
     float: left;
+    text-align: left;
     width: 75%;
     height: 700px;
 }
@@ -100,7 +83,44 @@ h3 {
     font-size: 20px;
 }
 
-/* elementos del footer */
+.articuloCentral {
+    margin: 10px;
+}
+
+.img_noticia {
+    width: 100px;
+    float: left;
+    margin-right: 10px;
+}
+
+/* elementos laterales */
+aside {
+    width: 20%;
+    height: 800px;
+    padding: 10px;
+}
+
+#izquierda {
+    float: left;
+    text-align: left;
+    margin-right: 15px;
+}
+
+.publicidad_lateral {
+    margin-top: 35px;
+}
+
+#derecha {
+    float: right;
+    margin-left: 5px;
+    height: 600px;
+}
+
+.articuloDer {
+    
+}
+
+/* ----------- elementos del footer ----------- */
 footer {
     text-align: center;
     margin: 0 auto;
