@@ -116,8 +116,12 @@ aside {
     height: 600px;
 }
 
-.articuloDer {
-    
+.articulo_derecha {
+    text-align: left;
+}
+
+.articulo_derecha p {
+    margin: 0 auto;
 }
 
 /* ----------- elementos del footer ----------- */
