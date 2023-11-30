@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Formulario 1</title>
+</head>
+
+<body>
+
+
+    <h1>FORMULARIO</h1>
+
+    <form action="">
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="fnombre" name="nombre" required maxlength="20"><br><br>
+
+        <label for="apellidos">Apellidos:</label><br>
+        <input type="text" id="fapellidos" name="apellidos" required maxlength="80" minlength="10"><br><br>
+
+        <label for="horas">Horas matriculadas:</label><br>
+        <input type="number" id="fhoras" name="horas" value="10" min="10" max="30" step="2"
+            title="Introduzca solo números pares"><br><br>
+
+        <label for="codigo">Código de alumno:</label><br>
+        <input type="number" id="fcodigo" name="codigo" value="42" required readonly><br><br>
+
+        <label for="username">Nombre de usuario:</label><br>
+        <input type="text" id="fusername" name="username" value="username" pattern="[a-z0-9]+"
+            title="Sólo minúsculas y números"><br><br>
+
+        <br>
+        <input id="btnBasico" type="submit" value="Submit"><br>
+
+    </form>
+
+
+<!--
+    <div class="container">
+        <div class="text">
+            Formulario de usuario
+        </div>
+        <form action="#">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" id="fnombre" name="nombre" required maxlength="20">
+                    <div class="underline"></div>
+                    <label for="nombre">Nombre: </label>
+                </div>
+                <div class="input-data">
+                    <input type="text" id="fapellidos" name="apellidos" required
+                        maxlength="80" minlength="10">
+                    <div class="underline"></div>
+                    <label for="apellidos">Apellidos: </label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="number" id="fhoras" name="horas" value="10" min="10" max="30" step="2" title="Introduzca solo números pares">
+                    <div class="underline"></div>
+                    <label for="horas">Horas matriculadas: </label>
+                </div>
+                <div class="input-data">
+                    <input type="number" id="fcodigo" name="codigo" value="42" required readonly>
+                    <div class="underline"></div>
+                    <label for="codigo">Código: </label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data textarea">
+                    <input type="text" id="fusername" name="username" pattern="[a-z0-9]+" title="Sólo minúsculas y números">
+                    <div class="underline"></div>
+                    <label for="">Nombre de usuario: </label>
+                    <br />
+                    <div class="form-row submit-btn">
+                        <div class="input-data">
+                            <div class="inner"></div>
+                            <input type="submit" value="submit">
+                        </div>
+                    </div>
+        </form>
+    </div>
+-->
+</body>
+
+</html>
