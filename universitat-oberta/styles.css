@@ -1,13 +1,13 @@
 /* Todos los textos (excepto los headings) tendrán el siguiente color y tipo de letra */
 * {
     color: #000076;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Los headings tendrán, además el siguiente tipo de letra */
 
 h1, h2, h3, h4 {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Merriweather', serif;
 }
 
 h1 {
@@ -84,3 +84,5 @@ button {
     margin-bottom: 5px;
     font-size: 30px;
 }
+
+
