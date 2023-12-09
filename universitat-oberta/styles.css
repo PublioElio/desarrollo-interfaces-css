@@ -119,4 +119,41 @@ footer {
     height: 150px;
 }
 
+/* Tabla últimos envíos */
 
+table {
+	border-top: 2px solid #000078 ;
+    border-bottom: 1px solid #000078;
+	border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+td, th {
+	padding: 15px;
+}
+
+th {
+    border-bottom: 2px solid #000078
+}
+
+.even {
+	background: #D0D0D0;
+    border-bottom: 2px solid #000078;
+    
+}
+
+.odd {
+	background: #f0f0f0;
+    border-bottom: 1px solid #000078;
+}
+
+#last {
+    border-top: 2px solid #000078;
+    font-size: 10px;
+}
+
+#last td {
+    padding: 5px;
+}
