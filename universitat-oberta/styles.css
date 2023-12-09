@@ -14,10 +14,14 @@ h1 {
     font-size: 50px;
 }
 
+h2 {
+    font-size: 40px;
+}
+
 /* Elementos centrados horizontalmente */
 nav,
-#seccion1_index {
-    border: #000076 solid 1px;
+#seccion1_index,
+#contenedor_central {
     margin: 0 auto;
     width: 80%;
 }
@@ -38,14 +42,20 @@ nav img {
 }
 
 /* Sección primera del Index */
+#seccion1_index {
+    overflow: auto;
+    margin-bottom: 25px;
+}
+
 section iframe {
     float: right;
 }
 
 #seccion1_index div {
-    width: 50%;
+    width: 40%;
     float: left;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 button {
@@ -53,4 +63,24 @@ button {
     border: 0px;
     border-radius: 5px;
     padding: 10px;
+}
+
+/* Sección 2 del index */
+#seccion2_cifras {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+#contenedor_central div {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+.cifras {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 30px;
 }
