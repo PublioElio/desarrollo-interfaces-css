@@ -1,10 +1,14 @@
 /* Todos los textos (excepto los headings) tendrán el siguiente color y tipo de letra */
 * {
-    color: #000076;
+    color: #000078;
     font-family: 'Lato', sans-serif;
 }
 
-/* Los headings tendrán, además el siguiente tipo de letra */
+body {
+    margin: 0px;
+}
+
+/* Headings */
 
 h1, h2, h3, h4 {
     font-family: 'Merriweather', serif;
@@ -21,7 +25,9 @@ h2 {
 /* Elementos centrados horizontalmente */
 nav,
 #seccion1_index,
-#contenedor_central {
+#contenedor_central,
+#seccion3_objetivos,
+#seccion1_ult_envi {
     margin: 0 auto;
     width: 80%;
 }
@@ -39,6 +45,10 @@ ul li {
 
 nav img {
     height: 75px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Sección primera del Index */
@@ -63,6 +73,7 @@ button {
     border: 0px;
     border-radius: 5px;
     padding: 10px;
+    font-size: 9px;
 }
 
 /* Sección 2 del index */
@@ -83,6 +94,29 @@ button {
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: 30px;
+}
+
+/* Sección 3 footer */
+
+#seccion3_objetivos {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#seccion3_objetivos div {
+    text-align: left;
+    padding: 35px;
+    border-bottom: #f0f0f0 solid 2px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #D0D0D0;
+    text-align: center;
+    border-top: #73EDFF solid 3px;
+    font-size: 12px;
+    height: 150px;
 }
 
 
