@@ -1,0 +1,56 @@
+/* Todos los textos (excepto los headings) tendrán el siguiente color y tipo de letra */
+* {
+    color: #000076;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Los headings tendrán, además el siguiente tipo de letra */
+
+h1, h2, h3, h4 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+/* Elementos centrados horizontalmente */
+nav,
+#seccion1_index {
+    border: #000076 solid 1px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Barra de navegación superior */
+ul {
+    float: right;
+    margin-top: 30px;
+}
+
+ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav img {
+    height: 75px;
+}
+
+/* Sección primera del Index */
+section iframe {
+    float: right;
+}
+
+#seccion1_index div {
+    width: 50%;
+    float: left;
+    padding: 50px;
+}
+
+button {
+    background-color: #ffe000;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+}
