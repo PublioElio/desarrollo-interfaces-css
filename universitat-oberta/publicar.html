@@ -34,73 +34,133 @@
         <h1>Depositar un documento:</h1>
         <section>
 
-            Los campos marcados con * son obligatorios
-            Datos de la publicación
-            Comunidad donde debe publicarse *
-            Docencia
-            Institucional
-            Investigación
-            Datos
-            Nombre del autor *
-            Primer apellido del autor *
-            Segundo apellido del autor *
-            Título del documento *
-            Fecha de creación del documento *
-            Editorial
-            Universitat Oberta de Catalunya
-            
-            Tipo de documento *
-            Artículo
-            Trabajo fin de carrera
-            Trabajo fin de máster
-            Tesis doctoral
-            Libro
-            Capítulo o parte de libro
-            Revisión
-            Conferencia
-            Clase
-            Informe de investigación
-            Informe interno
-            Hoja informativa
-            Documental
-            Idioma del documento *
-            Castellano
-            Catalán
-            Inglés
-            Alemán
-            Francés
-            Italiano
-            Japonés
-            Chino
-            Otro
-            Breve resumen del documento *
-            Enviar documento *
-            Acepta la licencia de publicación del documento *
-            Reconocimiento-NoComercial-SinObraDerivada 3.0
-            Reconocimiento -NoComercial-CompartirIgual 3.0</option>
-            Reconocimiento -SinObraDerivada 3.0
-            Reconocimiento -CompartirIgual 3.0
-            Reconocimiento 3.0
-            Datos de contacto del remitente
-            Nombre y apellidos *
-            Por favor, seleccione una de las dos opciones siguientes:
-            Hombre / Mujer
-            Tipo de documento de identidad *
-            NIF
-            NIE
-            PASS
-            Número de documento *
-            Correo electrónico *
-            Teléfono (opcional)
-            Idioma para la respuesta *
-            Castellano
-            Catalán
-            
-            He leído y acepto la política de privacidad y el aviso legal *
-            Dese ser informado sobre las nuevas incorporaciones al repositorio
-            Enviar
+            <p>Los campos marcados con * son obligatorios</p>
+            <h3>Datos de la publicación</h3>
+            <form action="">
+                <label for="comunidad">Comunidad donde debe publicarse *</label>
+                <select name="comunidad" id="comunidad" required>
+                    <option>Docencia</option>
+                    <option>Institucional</option>
+                    <option>Investigación</option>
+                </select>
 
+                <h3>Datos</h3>
+
+                <label for="nombre_autor">Nombre del autor *: </label>
+                <input type="text" id="nombre_autor" size="15" required>
+                <br>
+
+                <label for="primer_apellido">Primer apellido del autor *: </label>
+                <input type="text" id="primer_apellido" required>
+                <br>
+
+                <label for="segundo_apellido">Segundo apellido del autor *: </label>
+                <input type="text" id="segundo_apellido" required>
+                <br>
+
+                <label for="titulo">Título del documento *: </label>
+                <input type="text" id="titulo" size="40" required>
+                <br>
+
+                <label for="fecha">Fecha de creación del documento *: </label>
+                <input type="date" id="fecha" required>
+                <br>
+
+                <label for="editorial">Editorial: </label>
+                <input type="text" id="editorial" value="Universitat Oberta de Catalunya">
+                <br>
+
+                <label for="tipo_doc">Tipo de documento *: </label>
+                <select name="tipo" id="tipo_doc" required>
+                    <option>Artículo</option>
+                    <option>Trabajo fin de carrera</option>
+                    <option>Trabajo fin de máster</option>
+                    <option>Tesis doctoral</option>
+                    <option>Libro</option>
+                    <option>Capítulo o parte de libro</option>
+                    <option>Revisión</option>
+                    <option>Conferencia</option>
+                    <option>Clase</option>
+                    <option>Informe de investigación</option>
+                    <option>Informe interno</option>
+                    <option>Hoja informativa</option>
+                    <option>Documental</option>
+                </select>
+                <br>
+
+                <label for="idioma">Idioma del documento *: </label>
+                <select name="idioma" id="tipo_doc" required>
+                    <option>Castellano</option>
+                    <option>Catalán</option>
+                    <option>Inglés</option>
+                    <option>Alemán</option>
+                    <option>Francés</option>
+                    <option>Italiano</option>
+                    <option>Japonés</option>
+                    <option>Chino</option>
+                    <option>Otro</option>
+                </select>
+                <br>
+
+                <label for="resumen">Breve resumen del documento *: </label><br>
+                <textarea id="resumen" rows="5" cols="30" required> </textarea>
+                <br>
+
+                <h3>Enviar documento</h3>
+
+                <label for="licencia">Acepta la licencia de publicación del documento *: </label>
+                <select name="licencia" id="licencia" required>
+                    <option>Reconocimiento-NoComercial-SinObraDerivada 3.0</option>
+                    <option>Reconocimiento -NoComercial-CompartirIgual 3.0</option>
+                    <option>Reconocimiento -SinObraDerivada 3.0</option>
+                    <option>Reconocimiento -CompartirIgual 3.0</option>
+                    <option>Reconocimiento 3.0</option>
+                </select>
+                <br>
+
+                <h3>Datos de contacto del remitente</h3>
+
+                <label for="remitente">Nombre y apellidos *: </label>
+                <input type="text" id="remitente" size="40" required>
+                <br>
+
+                <label>Por favor, seleccione una de las dos opciones siguientes: </label> <br>
+                <input type="radio" name="sexo" value="h"> Hombre <br>
+                <input type="radio" name="sexo" value="m"> Mujer <br>
+
+                <label for="doc_id">Tipo de documento de identidad *: </label>
+                <select name="doc_id" id="doc_id" required>
+                    <option>NIF</option>
+                    <option>NIE</option>
+                    <option>PASS</option>
+                </select>
+                <br>
+
+                <label for="doc_num">Número de documento *: </label>
+                <input type="text" id="doc_num" size="8" maxlength="8" required>
+                <br>
+
+                <label for="email">Correo electrónico *: </label>
+                <input type="text" id="email" size="25" required>
+                <br>
+                
+                <label for="telefono">Teléfono (opcional): </label>
+                <input type="text" id="telefono" size="15">
+                <br>
+                
+                <label for="idioma_res">Idioma para la respuesta *: </label>
+                <select name="idioma_res" id="idioma_res" required>
+                    <option>Castellano</option>
+                    <option>Catalán</option>
+                </select>
+                <br>
+
+                <input type="checkbox" required> He leído y acepto la política de privacidad y el aviso legal *<br>
+                <input type="checkbox" required>  Deseo ser informado sobre las nuevas incorporaciones al repositorio<br>
+                <input type="button" value="Enviar">
+            </form>
         </section>
+
         <footer>
             <p>Actividad realizada por Adriano Díaz Benítez para la asignatura de Diseño de Interfaces</p>
             <p>Primer trimestre de 2º de DAM 2023-2024</p>

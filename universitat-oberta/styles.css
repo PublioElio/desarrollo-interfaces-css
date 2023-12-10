@@ -22,6 +22,10 @@ h2 {
     font-size: 40px;
 }
 
+h3 {
+    font-size: 18px;
+}
+
 /* Elementos centrados horizontalmente */
 nav,
 #seccion1_index,
@@ -156,4 +160,18 @@ th {
 
 #last td {
     padding: 5px;
+}
+
+/* Formulario */
+
+input, select {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-right: 15px;
+}
+
+textarea {
+    margin-top: 15px;
 }
