@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3 - Ejemplos HTML y CSS</title>
+    <!-- Estilos específicos de la página 3 -->
+    <style>
+        /* Encabezado */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Logo */
+        #logo {
+            font-size: 14px;
+        }
+
+        /* Navegación */
+        nav {
+            text-align: right;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos globales para el cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #87ceeb;
+            /* Color de fondo celeste */
+            color: #333;
+            /* Color del texto negro */
+        }
+
+        /* Estilos para el contenedor principal */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            /* Color de fondo blanco */
+            padding: 20px;
+            /* Espaciado interno */
+            border-radius: 5px;
+            /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Sombra ligera */
+        }
+
+        /* Estilos para los contenedores internos (divs) */
+        .simple-div {
+            background-color: #ffb6c1;
+            /* Color de fondo rosa claro */
+            padding: 10px;
+            /* Espaciado interno */
+            margin-bottom: 20px;
+            /* Margen inferior */
+        }
+
+        .three-divs {
+            display: flex;
+            /* Habilita el modelo de caja flexible */
+            background-color: #98fb98;
+            /* Color de fondo verde claro */
+            padding: 10px;
+            /* Espaciado interno */
+            margin-bottom: 20px;
+            /* Margen inferior */
+        }
+
+        .three-divs div {
+            width: 33%;
+            /* Divide cada div en tres partes iguales */
+        }
+
+        .two-divs {
+            display: flex;
+            background-color: #dda0dd;
+            /* Color de fondo violeta claro */
+            padding: 10px;
+            /* Espaciado interno */
+        }
+
+        .two-divs div {
+            width: 50%;
+            /* Divide cada div en dos partes iguales */
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            background-color: #333;
+            /* Color de fondo gris oscuro */
+            color: #fff;
+            /* Color del texto blanco */
+            text-align: center;
+            /* Alineación del texto al centro */
+            padding: 10px;
+            /* Espaciado interno */
+            margin-top: 20px;
+            /* Margen superior para separar el pie de página del resto de la página */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div id="logo">Mi Proyecto HTML y CSS</div>
+        <!-- Navegación -->
+        <nav>
+            <a href="Index.html">Principal</a>
+            <a href="pagina1.html">Página 1</a>
+            <a href="pagina2.html">Página 2</a>
+            <a href="pagina3.html">Página 3</a>
+        </nav>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h2>Página 3</h2>
+        <p>Esta es la tercera página con ejemplos adicionales.</p>
+
+        <!-- Primer div sencillo -->
+        <div class="simple-div">
+            <h3>Div Sencillo</h3>
+            <p>Este es un div sencillo con un color de fondo rosa claro.</p>
+        </div>
+
+        <!-- Segundo div dividido en tres divs -->
+        <div class="three-divs">
+            <div>
+                <h3>Div 1</h3>
+                <p>Contenido del primer div.</p>
+            </div>
+            <div>
+                <h3>Div 2</h3>
+                <p>Contenido del segundo div.</p>
+            </div>
+            <div>
+                <h3>Div 3</h3>
+                <p>Contenido del tercer div.</p>
+            </div>
+        </div>
+
+        <!-- Tercer div dividido en dos divs -->
+        <div class="two-divs">
+            <div>
+                <h3>Div 1</h3>
+                <p>Contenido del primer div.</p>
+            </div>
+            <div>
+                <h3>Div 2</h3>
+                <p>Contenido del segundo div.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+
+</html>

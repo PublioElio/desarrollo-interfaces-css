@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2 - Ejemplos HTML y CSS</title>
+    <!-- Estilos específicos de la página 2 -->
+    <style>
+        /* Encabezado */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Logo */
+        #logo {
+            font-size: 14px;
+        }
+
+        /* Navegación */
+        nav {
+            text-align: right;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos globales para el cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ff6347; /* Color de fondo rojo tomate */
+            color: #fff; /* Color del texto blanco */
+        }
+
+        /* Estilos para el contenedor principal */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff; /* Color de fondo blanco */
+            padding: 20px; /* Espaciado interno */
+            border-radius: 5px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+            color: #007bff;
+        }
+
+        /* Estilos para el formulario */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: black;
+        }
+
+        input,
+        select {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+
+        /* Estilos para el checkbox y el radiobutton */
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            background-color: #333; /* Color de fondo gris oscuro */
+            color: #fff; /* Color del texto blanco */
+            text-align: center; /* Alineación del texto al centro */
+            padding: 10px; /* Espaciado interno */
+            margin-top: 20px; /* Margen superior para separar el pie de página del resto de la página */
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div id="logo">Mi Proyecto HTML y CSS</div>
+        <!-- Navegación -->
+        <nav>
+            <a href="Index.html">Principal</a>
+            <a href="pagina1.html">Página 1</a>
+            <a href="pagina2.html">Página 2</a>
+            <a href="pagina3.html">Página 3</a>
+        </nav>
+    </header>
+    
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h2>Página 2</h2>
+        <p>Esta es la segunda página con ejemplos adicionales.</p>
+
+        <!-- Formulario -->
+        <form>
+            <!-- Campo de usuario -->
+            <label for="usuario">Usuario: <input type="text" id="usuario" name="usuario" required></label>
+
+            <!-- Campo de contraseña -->
+            <label for="contrasena">Contraseña: <input type="password" id="contrasena" name="contrasena" required></label>
+
+            <!-- Campo de correo electrónico -->
+            <label for="correo">Correo Electrónico: <input type="email" id="correo" name="correo" required></label>
+
+            <!-- Checkbox para recordar el usuario -->
+            <label><input type="checkbox" id="recordar" name="recordar"> Recordar Usuario</label>
+
+            <!-- Radiobuttons para el género -->
+            <label><input type="radio" id="masculino" name="sexo" value="masculino"> Masculino</label>
+            <label><input type="radio" id="femenino" name="sexo" value="femenino"> Femenino</label>
+
+            <!-- Botón de envío del formulario -->
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1 - Ejemplos HTML y CSS</title>
+    <!-- Estilos específicos de la página 1 -->
+    <style>
+        /* Estilos globales para el cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Estilos para el encabezado */
+        header {
+            background-color: #007bff; /* Color de fondo azul */
+            color: #fff; /* Color del texto blanco */
+            text-align: center; /* Alineación del texto al centro */
+            padding: 10px; /* Espaciado interno */
+        }
+
+        /* Estilos para la sección principal (flex container) */
+        section {
+            display: flex; /* Habilita el modelo de caja flexible */
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si no hay espacio suficiente */
+            justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor con espacio uniforme entre ellos */
+            margin: 20px; /* Margen externo para separar la sección del resto de la página */
+        }
+
+        /* Estilos para la barra de navegación */
+        nav {
+            flex: 1; /* Ocupa el 50% del ancho disponible en la sección */
+            background-color: #f0f0f0; /* Color de fondo gris claro */
+            padding: 10px; /* Espaciado interno */
+            border-radius: 5px; /* Bordes redondeados */
+        }
+
+        /* Estilos para la lista de navegación */
+        ul {
+            list-style-type: none; /* Elimina los marcadores de lista predeterminados */
+            padding: 0; /* Elimina el relleno predeterminado */
+            margin: 0; /* Elimina el margen predeterminado */
+        }
+
+        li {
+            margin-bottom: 10px; /* Margen inferior entre elementos de la lista */
+        }
+
+        /* Estilos para el área de contenido principal */
+        article {
+            flex: 2; /* Ocupa el 50% del ancho disponible en la sección */
+            background-color: #fff; /* Color de fondo blanco */
+            padding: 10px; /* Espaciado interno */
+            border-radius: 5px; /* Bordes redondeados */
+        }
+
+        /* Estilos para el título en el área de contenido principal */
+        h1 {
+            color: #007bff; /* Color del texto azul */
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            background-color: #333; /* Color de fondo gris oscuro */
+            color: #fff; /* Color del texto blanco */
+            text-align: center; /* Alineación del texto al centro */
+            padding: 10px; /* Espaciado interno */
+            margin-top: 20px; /* Margen superior para separar el pie de página del resto de la página */
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h2>CSS Layout Float</h2>
+        <p>En este ejemplo, hemos creado un encabezado, dos columnas/contenedores y un pie de página. En pantallas más pequeñas, las columnas se apilarán una encima de la otra.</p>
+        <p>Redimensiona la ventana del navegador para ver el efecto responsivo (aprenderás más sobre esto en nuestro próximo capítulo - HTML Responsive).</p>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Sección con estructura parecida al ejemplo proporcionado -->
+        <section>
+            <!-- Barra de navegación -->
+            <nav>
+                <h2>Cities</h2>
+                <ul>
+                    <li><a href="Index.html">Principal</a></li>
+                    <li><a href="pagina1.html">Pagina 1</a></li>
+                    <li><a href="pagina2.html">Pagina 2</a></li>
+                    <li><a href="pagina3.html">Pagina 3</a></li>
+            </nav>
+  
+            <!-- Área de contenido principal -->
+            <article>
+                <h1>London</h1>
+                <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+            </article>
+        </section>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
