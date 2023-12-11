@@ -1,0 +1,175 @@
+* {
+    border: 1px solid black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* alinear contenedores principales en el centro de la página */
+#main,
+#seccion2,
+#seccion3,
+#seccion4,
+#seccion5 {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* barra de navegación */
+nav {
+    overflow: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 {
+    float: left;
+}
+
+nav ul {
+    float: right;
+    padding: 0px;
+    margin-top: 25px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+/* primera sección */
+
+section:nth-of-type(1) {
+    background-image:url("img/showcase.jpg");
+}
+
+#main {
+    overflow: auto;
+}
+
+#presentacion {
+    width: 65%;
+    text-align: left;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+#imagenes {
+    overflow: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#primero {
+    background-image: url(img/perseverance.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 180px;
+    float: left;
+}
+
+#segundo {
+    background-image: url(img/missions.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 180px;
+    float: left;
+}
+
+#tercero {
+    background-image: url(img/future.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 180px;
+    float: left;
+}
+
+/* segunda sección */
+
+section:nth-of-type(2) {
+    background-image:url("img/feature.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+section:nth-of-type(2) p {
+    font-size: 20px;
+}
+
+/* tercera sección */
+
+section:nth-of-type(3) {
+    background-image:url("img/background-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#seccion3 {
+    text-align: left;
+    overflow: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#seccion3 div {
+    float: left;
+    width: 45%;
+}
+
+#img_perseverance {
+    height: 300px;
+    float: right;
+}
+
+#seccion4 {
+    text-align: left;
+    overflow: auto;
+    margin-bottom: 100px;
+}
+
+#seccion4 div {
+    float: right;
+    width: 45%;
+}
+
+#img_missions {
+    height: 300px;
+}
+
+
+/* cuarta sección */
+
+section:nth-of-type(4) {
+    background-image:url("img/background-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section:nth-of-type(4) h3 {
+    margin-top: 80px;
+}
+
+section:nth-of-type(4) div {
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+section:nth-of-type(4) img {
+    width: 300px;
+    margin-bottom: 150px;
+}
