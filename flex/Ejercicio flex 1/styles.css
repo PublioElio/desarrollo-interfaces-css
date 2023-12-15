@@ -1,29 +1,126 @@
-body, html {
-    width: 90%;
-    margin: 0 auto;
-    justify-content: center;
-    background-color: #ecedf2;
-  }
+/* elementos generales */
 
-header {
+body,
+html {
+    margin: 0;
+    background-color: #ECEEF3;
+    font-family: Roboto;
+    color: #182941;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #182941;
+}
+
+/* headings */
+
+h1 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+h4 {
+    color: #51B0DF;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+h5 {
+    margin: 5px;
+    font-size: 15px;
+}
+
+/* Botones */
+
+button {
+    border: 0px none;
+    border-radius: 5px;
+    background-color: #51B0DF;
+    color: white;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* navbar */
+
+nav {
+    width: 90%;
+    text-align: center;
+    margin: auto;
     display: flex;
 }
 
-header div:last-child {
+nav div:last-child {
     margin-left: auto;
 }
 
 ul {
     display: flex;
-    justify-content: space-between;
     padding: 0px;
-    width: 400px;
+    width: 500px;
+    justify-content: space-around;
 }
 
 li {
-    list-style:none;
+    list-style: none;
 }
 
-section {
+/* Primera section */
+
+section:nth-child(1) {
+    width: 90%;
+    margin: auto;
     display: flex;
+}
+
+section:nth-child(1) div:first-child {
+    width: 45%;
+    margin-top: 100px;
+}
+
+section:nth-child(1) div:last-child {
+    margin-left: auto;
+}
+
+/* section 'slider' */
+
+section:nth-child(2) {
+    background-color: #BEE0F1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider_element {
+    text-align: center;
+    width: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.slider_element img {
+    width: 100px;
+}
+
+/* section 'my work' */
+
+section:nth-child(3) {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    text-align: center;
 }
