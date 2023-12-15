@@ -1,0 +1,29 @@
+body, html {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #ecedf2;
+  }
+
+header {
+    display: flex;
+}
+
+header div:last-child {
+    margin-left: auto;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    width: 400px;
+}
+
+li {
+    list-style:none;
+}
+
+section {
+    display: flex;
+}
