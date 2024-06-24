@@ -1,3 +1,13 @@
+nav {
+  background: orange;
+  color: black;
+}
+
+header {
+  background: indigo;
+  color: white;
+}
+
 .box1 {
   background: indigo;
 }

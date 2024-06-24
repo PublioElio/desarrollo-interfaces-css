@@ -1,8 +1,9 @@
+@use 'navbar';
+@use 'header';
+
 $box-color:indigo;
 $number: 5;
 $sum: 10 + 10;
-
-
 
 @debug "The sum is #{$sum}";
 
