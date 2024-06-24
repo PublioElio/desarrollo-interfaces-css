@@ -1,32 +1,17 @@
-nav {
-  background: orange;
-  color: black;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 13 |     .color-#{$color} {
+ *    |              ^^^^^^
+ *    '
+ *   app.scss 13:14  root stylesheet */
 
-header {
-  background: indigo;
-  color: white;
-}
-
-.nav {
-  width: 100%;
-  height: 80px;
-  background: orange;
-  line-height: 80px;
-}
-.nav__ul {
-  list-style: none;
-}
-.nav__ul__li {
-  display: inline-block;
-}
-.nav__ul__li__a {
-  text-decoration: none;
-  color: white;
-}
-.nav__ul__li__a--red {
-  color: red;
-}
-.nav__ul__li__a--indigo {
-  color: indigo;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 13 \2502      .color-#{$color} {\d\a    \2502               ^^^^^^\a    \2575 \a   app.scss 13:14  root stylesheet";
 }

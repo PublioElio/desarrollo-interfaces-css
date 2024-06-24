@@ -6,10 +6,15 @@
 //$sum: 10 + 10;
 //@debug "The sum is #{$sum}";
 
+/*
 $colors: ('orange', 'green', 'blue', 'pink');
 @each $color in $colors{
     @debug $color;
+    .color-#{$color} {
+        background: #{$color};
+    }
 }
+*/
 
 .nav {
   width: 100%;
