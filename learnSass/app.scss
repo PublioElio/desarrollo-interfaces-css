@@ -20,6 +20,12 @@ $sum: 10 + 10;
       &__a {
         text-decoration: none;
         color: $white;
+        &--red{
+            color: $red;
+        }
+        &--indigo{
+            color: $indigo;
+        }
       }
     }
   }
