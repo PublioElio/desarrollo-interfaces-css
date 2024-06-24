@@ -6,7 +6,7 @@
 //$sum: 10 + 10;
 //@debug "The sum is #{$sum}";
 
-$colors: ("orange", "green", "blue", "pink");
+$colors: ("green", "blue", "pink");
 @each $color in $colors {
   @debug $color;
   .color-#{$color} {
@@ -30,7 +30,7 @@ $fontWeights: (
 @debug map-get($map: $fontWeights, $key: normal);
 
 $startLoop: 1;
-$endLoop: 20;
+$endLoop: 5;
 
 @for $i from $startLoop through $endLoop {
   .fontsize-#{$i} {
@@ -58,6 +58,42 @@ $circle: "normal";
 
 .col-3 {
     width: grid(3);
+}
+
+%alert {
+    padding: 15px;
+    font-size: 14px;
+    color: $white;
+}
+
+%alert-radius {
+    border-radius: 25px;
+}
+
+.alert-danger {
+    @extend %alert, %alert-radius;
+    background: $red;
+}
+
+.alert-succes {
+    @extend %alert, %alert-radius;
+    background: #{nth($colors, 1)};
+}
+
+@mixin alert($bg, $radius){
+    background: $bg;
+    border-radius: $radius;
+    color: $white;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.alert-1 {
+    @include alert($red, 15px);
+}
+
+.alert-2 {
+    @include alert(#{nth($colors, 1)}, 15px);
 }
 
 .nav {
