@@ -6,22 +6,25 @@
 //$sum: 10 + 10;
 //@debug "The sum is #{$sum}";
 
-
-$colors: ('orange', 'green', 'blue', 'pink');
-@each $color in $colors{
-    @debug $color;
-    .color-#{$color} {
-      background: #{$color};
-    }
+$colors: ("orange", "green", "blue", "pink");
+@each $color in $colors {
+  @debug $color;
+  .color-#{$color} {
+    background: #{$color};
+  }
 }
 
-$fontWeights: ('normal': 400, 'bold': 500, 'extaBold': 600);
-@each $key, $value in $fontWeights{
-    @debug 'The key is: #{$key}';
-    @debug 'The value is: #{$value}';
-    .font-#{$key} {
-        font-weight: $value;
-    }
+$fontWeights: (
+  "normal": 400,
+  "bold": 500,
+  "extaBold": 600,
+);
+@each $key, $value in $fontWeights {
+  @debug "The key is: #{$key}";
+  @debug "The value is: #{$value}";
+  .font-#{$key} {
+    font-weight: $value;
+  }
 }
 
 @debug map-get($map: $fontWeights, $key: normal);
@@ -30,11 +33,24 @@ $startLoop: 1;
 $endLoop: 20;
 
 @for $i from $startLoop through $endLoop {
-    .fontsize-#{$i} {
-        font-size: #{$i};
-    }
+  .fontsize-#{$i} {
+    font-size: #{$i};
+  }
 }
 
+$circle: 'normal';
+
+.header {
+  width: 200px;
+  height: 200px;
+  @if $circle == 'normal' {
+    border-radius: 10px;
+  } @else if $circle == 'radius' {
+    border-radius: 50%;
+  } @else {
+    border-radius: 0;
+  }
+}
 
 .nav {
   width: 100%;
@@ -48,11 +64,11 @@ $endLoop: 20;
       &__a {
         text-decoration: none;
         color: $white;
-        &--red{
-            color: $red;
+        &--red {
+          color: $red;
         }
-        &--indigo{
-            color: $indigo;
+        &--indigo {
+          color: $indigo;
         }
       }
     }

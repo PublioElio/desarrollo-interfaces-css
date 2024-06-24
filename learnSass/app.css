@@ -116,6 +116,12 @@ header {
   font-size: 20;
 }
 
+.header {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
 .nav {
   width: 100%;
   height: 80px;
