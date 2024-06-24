@@ -6,15 +6,26 @@
 //$sum: 10 + 10;
 //@debug "The sum is #{$sum}";
 
-/*
+
 $colors: ('orange', 'green', 'blue', 'pink');
 @each $color in $colors{
     @debug $color;
     .color-#{$color} {
-        background: #{$color};
+      background: #{$color};
     }
 }
-*/
+
+$fontWeights: ('normal': 400, 'bold': 500, 'extaBold': 600);
+@each $key, $value in $fontWeights{
+    @debug 'The key is: #{$key}';
+    @debug 'The value is: #{$value}';
+    .font-#{$key} {
+        font-weight: $value;
+    }
+}
+
+@debug map-get($map: $fontWeights, $key: normal);
+
 
 .nav {
   width: 100%;
