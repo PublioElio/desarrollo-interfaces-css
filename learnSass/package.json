@@ -4,7 +4,7 @@
   "description": "learn sass or scss from scratch",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile-sass": "sass app.scss app.css --watch --no-source-map"
   },
   "author": "Adriano Diaz",
   "license": "ISC"
