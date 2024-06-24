@@ -1,7 +1,9 @@
 .row {
     background: red;
     display: flex;
+    height: 600px;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .column {
