@@ -1,4 +1,19 @@
-$red:yellow;
-body {
-    background: $red;
+$box-color:indigo;
+$number: 5;
+$sum: 10 + 10;
+
+
+
+@debug "The sum is #{$sum}";
+
+.box1 {
+    background: $box-color;
+}
+
+.box2 {
+    background: $box-color;
+}
+
+.box3 {
+    background: $box-color;
 }
