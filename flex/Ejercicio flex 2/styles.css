@@ -1,0 +1,12 @@
+.row {
+    background: red;
+    display: flex;
+}
+
+.column {
+    background: orange;
+    height: 150px;
+    margin: 20px;
+    flex: 1 1 150px;
+}
+
