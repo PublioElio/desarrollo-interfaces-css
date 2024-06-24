@@ -38,18 +38,26 @@ $endLoop: 20;
   }
 }
 
-$circle: 'normal';
+$circle: "normal";
 
 .header {
   width: 200px;
   height: 200px;
-  @if $circle == 'normal' {
+  @if $circle == "normal" {
     border-radius: 10px;
-  } @else if $circle == 'radius' {
+  } @else if $circle == "radius" {
     border-radius: 50%;
   } @else {
     border-radius: 0;
   }
+}
+
+@function grid($number) {
+  @return calc(100% / 12 * $number);
+}
+
+.col-3 {
+    width: grid(3);
 }
 
 .nav {
