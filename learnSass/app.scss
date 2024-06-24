@@ -26,6 +26,15 @@ $fontWeights: ('normal': 400, 'bold': 500, 'extaBold': 600);
 
 @debug map-get($map: $fontWeights, $key: normal);
 
+$startLoop: 1;
+$endLoop: 20;
+
+@for $i from $startLoop through $endLoop {
+    .fontsize-#{$i} {
+        font-size: #{$i};
+    }
+}
+
 
 .nav {
   width: 100%;
