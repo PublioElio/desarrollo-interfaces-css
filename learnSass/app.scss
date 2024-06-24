@@ -2,11 +2,14 @@
 @use "header";
 @use "variables" as *;
 
-$box-color: indigo;
-$number: 5;
-$sum: 10 + 10;
+//$number: 5;
+//$sum: 10 + 10;
+//@debug "The sum is #{$sum}";
 
-@debug "The sum is #{$sum}";
+$colors: ('orange', 'green', 'blue', 'pink');
+@each $color in $colors{
+    @debug $color;
+}
 
 .nav {
   width: 100%;
