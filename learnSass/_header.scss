@@ -1,4 +1,6 @@
+@use 'variables' as *;
+
 header {
-    background: indigo;
-    color: white;
+    background: $indigo;
+    color: $white;
 }
